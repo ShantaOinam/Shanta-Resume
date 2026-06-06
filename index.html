@@ -5,7 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oinam Shanta Singh | AI & Automation Engineering Lead</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
+
+:root{
+    --primary:#0F172A;
+    --secondary:#2563EB;
+    --accent:#06B6D4;
+    --light:#F8FAFC;
+    --border:#E2E8F0;
+    --text:#334155;
+    --muted:#64748B;
+}
+
 *{
     margin:0;
     padding:0;
@@ -13,139 +26,199 @@
 }
 
 body{
-    font-family:'Segoe UI', Arial, sans-serif;
-    background:#f4f6f9;
-    color:#333;
-    line-height:1.5;
+    font-family:'Inter',sans-serif;
+    background:#F1F5F9;
+    color:var(--text);
+    line-height:1.6;
 }
 
-.resume-container{
+.resume{
     max-width:1200px;
-    margin:20px auto;
+    margin:30px auto;
     background:#fff;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
 }
+
+/* HEADER */
 
 .header{
-    background:#16324F;
-    color:#fff;
-    padding:35px;
+    background:linear-gradient(135deg,#0F172A,#1E293B);
+    color:white;
+    padding:40px 50px;
 }
 
 .header h1{
-    font-size:38px;
-    margin-bottom:5px;
+    font-size:42px;
+    font-weight:800;
     letter-spacing:1px;
 }
 
-.header h2{
+.header .role{
     font-size:18px;
-    font-weight:400;
-    color:#d9e6f2;
+    color:#CBD5E1;
+    margin-top:8px;
 }
 
 .contact{
-    margin-top:15px;
+    margin-top:18px;
+    color:#CBD5E1;
     font-size:14px;
 }
 
 .contact a{
-    color:#fff;
+    color:#CBD5E1;
     text-decoration:none;
 }
 
-.main{
-    display:flex;
-}
-
-.sidebar{
-    width:34%;
-    background:#f8fafc;
-    padding:30px;
-    border-right:1px solid #e5e7eb;
-}
+/* BODY */
 
 .content{
-    width:66%;
-    padding:30px;
+    padding:35px 50px;
+}
+
+/* SUMMARY */
+
+.summary{
+    font-size:15px;
+    text-align:justify;
+    margin-bottom:30px;
+}
+
+/* IMPACT */
+
+.impact-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-bottom:35px;
+}
+
+.impact-card{
+    background:#F8FAFC;
+    border-top:5px solid var(--secondary);
+    text-align:center;
+    padding:20px;
+}
+
+.impact-number{
+    font-size:32px;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.impact-label{
+    font-size:13px;
+    color:var(--muted);
+    margin-top:5px;
+}
+
+/* SECTIONS */
+
+.section{
+    margin-bottom:30px;
 }
 
 .section-title{
-    color:#16324F;
-    font-size:18px;
-    font-weight:700;
-    border-bottom:3px solid #1E88E5;
-    padding-bottom:5px;
-    margin-bottom:15px;
-    margin-top:20px;
-    text-transform:uppercase;
-}
-
-.metric-box{
-    background:#E8F1FB;
-    border-left:4px solid #1E88E5;
-    padding:12px;
-    margin-bottom:10px;
-}
-
-.metric-box strong{
-    display:block;
+    color:var(--primary);
     font-size:20px;
-    color:#16324F;
-}
-
-.competency-block{
+    font-weight:700;
     margin-bottom:15px;
-    font-size:13px;
+    padding-bottom:8px;
+    border-bottom:2px solid var(--border);
 }
 
-.competency-block strong{
-    display:block;
-    color:#16324F;
-    margin-bottom:4px;
+/* COMPETENCIES */
+
+.competencies{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
 }
+
+.comp-box{
+    background:#F8FAFC;
+    padding:15px;
+    border-left:4px solid var(--secondary);
+}
+
+.comp-box strong{
+    display:block;
+    color:var(--primary);
+    margin-bottom:5px;
+}
+
+/* EXPERIENCE */
 
 .job{
-    margin-bottom:25px;
+    margin-bottom:28px;
 }
 
 .job-header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:5px;
 }
 
 .job-title{
-    font-size:17px;
-    font-weight:bold;
-    color:#16324F;
+    font-size:18px;
+    font-weight:700;
+    color:var(--primary);
 }
 
 .job-date{
-    color:#666;
-    font-size:13px;
+    color:var(--muted);
+    font-size:14px;
 }
 
 .company{
-    font-weight:bold;
+    color:var(--secondary);
+    font-weight:600;
     margin-bottom:10px;
 }
 
 ul{
-    padding-left:20px;
+    padding-left:22px;
 }
 
 li{
-    margin-bottom:6px;
+    margin-bottom:8px;
 }
 
-.summary{
-    text-align:justify;
+/* PROGRAMS */
+
+.program-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
 }
 
-.certification,
-.education{
+.program{
+    background:#F8FAFC;
+    padding:15px;
+    border-left:4px solid var(--accent);
+}
+
+.program strong{
+    display:block;
+    color:var(--primary);
+    margin-bottom:5px;
+}
+
+/* FOOTER */
+
+.footer{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:25px;
+}
+
+.footer-box{
+    background:#F8FAFC;
+    padding:15px;
+}
+
+.footer-box h4{
+    color:var(--primary);
     margin-bottom:10px;
 }
 
@@ -154,189 +227,45 @@ li{
         background:white;
     }
 
-    .resume-container{
-        margin:0;
+    .resume{
         box-shadow:none;
+        margin:0;
     }
 }
+
 </style>
 </head>
 
 <body>
 
-<div class="resume-container">
+<div class="resume">
+
+    <!-- HEADER -->
 
     <div class="header">
 
         <h1>OINAM SHANTA SINGH</h1>
 
-        <h2>
-            AI & Automation Engineering Lead |
-            Enterprise Solution Architect |
-            Agentic AI & Digital Transformation Leader
-        </h2>
+        <div class="role">
+            AI & Automation Engineering Lead | Enterprise Solution Architect | Agentic AI & Digital Transformation Leader
+        </div>
 
         <div class="contact">
             Bangalore, India |
             +91 8105013705 |
-            <a href="mailto:shantaoinamsingh@gmail.com">shantaoinamsingh@gmail.com</a>
-            <br>
-            LinkedIn:
+            shantaoinamsingh@gmail.com |
             <a href="https://www.linkedin.com/in/shanta-oinam-08199417/" target="_blank">
-                linkedin.com/in/shanta-oinam-08199417
+                LinkedIn Profile
             </a>
         </div>
 
     </div>
 
-    <div class="main">
+    <div class="content">
 
-        <!-- LEFT PANEL -->
+        <!-- EXECUTIVE SUMMARY -->
 
-        <div class="sidebar">
-
-            <div class="section-title">Career Highlights</div>
-
-            <div class="metric-box">
-                <strong>1000+</strong>
-                Automation & AI Solutions Delivered
-            </div>
-
-            <div class="metric-box">
-                <strong>$9+ Billion</strong>
-                Business Value Generated
-            </div>
-
-            <div class="metric-box">
-                <strong>200+</strong>
-                FTE Capacity Creation
-            </div>
-
-            <div class="metric-box">
-                <strong>25</strong>
-                Team Members Led
-            </div>
-
-            <div class="section-title">Core Competencies</div>
-
-            <div class="competency-block">
-                <strong>Automation & Intelligent Automation Platforms</strong>
-                UiPath Enterprise Platform, Agentic Automation,
-                Robotic Process Automation (RPA),
-                Intelligent Document Processing (IDP),
-                Process Mining, Task Mining,
-                Workflow Automation, Power Automate,
-                Power Platform, Automation CoE Governance
-            </div>
-
-            <div class="competency-block">
-                <strong>Artificial Intelligence & Agentic AI</strong>
-                Agentic AI, Generative AI,
-                OpenAI, Azure OpenAI, Gemini,
-                Microsoft Copilot Studio,
-                Retrieval-Augmented Generation (RAG),
-                LangChain, Ollama, FAISS,
-                AI Assistants, Enterprise AI Solutions
-            </div>
-
-            <div class="competency-block">
-                <strong>Solution Architecture & Digital Transformation</strong>
-                Enterprise Solution Design,
-                Transformation Strategy,
-                Architecture Governance,
-                Enterprise Integrations,
-                Technology Modernization,
-                Digital Transformation,
-                Operating Model Design,
-                Automation Architecture,
-                AI Solution Architecture
-            </div>
-
-            <div class="competency-block">
-                <strong>Business Operations & Process Excellence</strong>
-                Media Operations,
-                Finance Operations,
-                Healthcare Operations,
-                Supply Chain Management,
-                Shared Services,
-                Procure-to-Pay (P2P),
-                Operational Excellence,
-                Workflow Optimization
-            </div>
-
-            <div class="competency-block">
-                <strong>Client & Stakeholder Engagement</strong>
-                Executive Presentations,
-                Discovery Workshops,
-                Solution Consulting,
-                Stakeholder Management,
-                Business Process Assessment,
-                Value Realization,
-                Change Management
-            </div>
-
-            <div class="competency-block">
-                <strong>Leadership & Delivery Management</strong>
-                Global Delivery Leadership,
-                Team Leadership,
-                Resource Planning,
-                Capacity Planning,
-                KPI Monitoring,
-                Program Governance,
-                Agile Delivery,
-                Benefits Tracking
-            </div>
-
-            <div class="competency-block">
-                <strong>Cloud, Integration & Enterprise Technologies</strong>
-                Microsoft Azure,
-                Azure App Services,
-                Azure SQL Database,
-                Python,
-                Flask,
-                REST APIs,
-                Microsoft Graph API,
-                SharePoint Online,
-                Salesforce,
-                Workday,
-                GitHub,
-                Azure Repos,
-                CI/CD Pipelines,
-                SQL Server,
-                JSON,
-                Enterprise Integrations
-            </div>
-
-            <div class="section-title">Certifications</div>
-
-            <div class="certification">
-                • UiPath Certified Professional Advanced RPA Developer (UiARD)
-            </div>
-
-            <div class="certification">
-                • UiPath Certified Professional Agentic Automation Associate
-            </div>
-
-            <div class="section-title">Education</div>
-
-            <div class="education">
-                <strong>Bachelor of Information Technology</strong><br>
-                Mahendra Engineering College<br>
-                Anna University | 2009
-            </div>
-
-            <div class="section-title">Industry Experience</div>
-
-            Media & Advertising<br>
-            Finance<br>
-            Healthcare<br>
-            Supply Chain Management
-
-        </div>
-
-        <!-- RIGHT PANEL -->
-
-        <div class="content">
+        <div class="section">
 
             <div class="section-title">Executive Summary</div>
 
@@ -346,21 +275,100 @@ li{
 
                 Proven expertise in establishing Automation & AI Centers of Excellence, designing enterprise automation strategies, architecting intelligent workflow solutions, and leading AI-powered transformation programs for global organizations.
 
-                Successfully delivered 1,000+ automation and AI solutions, generated business value exceeding $9 Billion, enabled capacity creation equivalent to 200+ FTEs, and built high-performing global engineering teams supporting EMEA and worldwide operations.
+                Successfully delivered 1,000+ automation and AI solutions, influenced enterprise transformation value exceeding $9 Billion, enabled capacity creation equivalent to 200+ FTEs, and built high-performing global engineering teams supporting EMEA and worldwide operations.
 
             </div>
+
+        </div>
+
+        <!-- IMPACT -->
+
+        <div class="impact-grid">
+
+            <div class="impact-card">
+                <div class="impact-number">15</div>
+                <div class="impact-label">Years Experience</div>
+            </div>
+
+            <div class="impact-card">
+                <div class="impact-number">200+</div>
+                <div class="impact-label">Automation & AI Solutions Delivered</div>
+            </div>
+
+            <div class="impact-card">
+                <div class="impact-number">$9B+</div>
+                <div class="impact-label">Transformation Value Influenced</div>
+            </div>
+
+            <div class="impact-card">
+                <div class="impact-number">200+</div>
+                <div class="impact-label">FTE Capacity Created</div>
+            </div>
+
+        </div>
+
+        <!-- COMPETENCIES -->
+
+        <div class="section">
+
+            <div class="section-title">Core Competencies</div>
+
+            <div class="competencies">
+
+                <div class="comp-box">
+                    <strong>Automation & Intelligent Automation Platforms</strong>
+                    UiPath Enterprise Platform, Agentic Automation, RPA, IDP, Process Mining, Task Mining, Workflow Automation, Power Automate, Power Platform, Automation CoE Governance
+                </div>
+
+                <div class="comp-box">
+                    <strong>Artificial Intelligence & Agentic AI</strong>
+                    Agentic AI, Generative AI, OpenAI, Azure OpenAI, Gemini, Microsoft Copilot Studio, RAG Architecture, LangChain, Ollama, FAISS, AI Assistants
+                </div>
+
+                <div class="comp-box">
+                    <strong>Solution Architecture & Digital Transformation</strong>
+                    Enterprise Solution Design, Transformation Strategy, Architecture Governance, Technology Modernization, Enterprise Integrations, Operating Model Design
+                </div>
+
+                <div class="comp-box">
+                    <strong>Business Operations & Process Excellence</strong>
+                    Media Operations, Finance Operations, Healthcare Operations, Supply Chain Management, Shared Services, Operational Excellence
+                </div>
+
+                <div class="comp-box">
+                    <strong>Client & Stakeholder Engagement</strong>
+                    Executive Presentations, Discovery Workshops, Solution Consulting, Stakeholder Management, Value Realization, Change Management
+                </div>
+
+                <div class="comp-box">
+                    <strong>Technology & Enterprise Platforms</strong>
+                    Microsoft Azure, Python, Flask, REST APIs, Microsoft Graph API, SharePoint Online, Salesforce, Workday, GitHub, Azure Repos, SQL
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- STRATEGIC HIGHLIGHTS -->
+
+        <div class="section">
 
             <div class="section-title">Strategic Highlights</div>
 
             <ul>
                 <li>Delivered and supported 1,000+ Automation and AI solutions across enterprise operations.</li>
-                <li>Generated business value exceeding $9 Billion through intelligent automation and transformation initiatives.</li>
-                <li>Enabled operational scaling equivalent to 200+ FTEs through automation-led process modernization.</li>
+                <li>Influenced enterprise transformation value exceeding $9 Billion through intelligent automation and digital transformation initiatives.</li>
+                <li>Enabled operational scaling equivalent to 200+ FTEs through automation-led modernization programs.</li>
                 <li>Built and led a global team of 25 Automation, AI, and Solution Engineering professionals.</li>
                 <li>Established governance frameworks, reusable assets, and enterprise delivery standards for Automation and AI programs.</li>
                 <li>Led Agentic AI, Generative AI, and intelligent workflow transformation initiatives across EMEA and global operations.</li>
-                <li>Architected enterprise solutions integrating UiPath, Microsoft Copilot, Azure, Power Platform, SharePoint, Workday, Salesforce, and AI platforms.</li>
             </ul>
+
+        </div>
+
+        <!-- EXPERIENCE -->
+
+        <div class="section">
 
             <div class="section-title">Professional Experience</div>
 
@@ -378,7 +386,7 @@ li{
                     <li>Define enterprise architecture, governance standards, reusable frameworks, and delivery models.</li>
                     <li>Lead a global team of 25 Automation, AI, and Solution Engineering professionals.</li>
                     <li>Drive adoption of Agentic AI, Generative AI, Intelligent Automation, and workflow transformation initiatives.</li>
-                    <li>Partner with executive stakeholders to identify transformation opportunities, scalable operating models, and measurable business outcomes.</li>
+                    <li>Partner with executive stakeholders to identify transformation opportunities and scalable operating models.</li>
                 </ul>
 
             </div>
@@ -394,7 +402,7 @@ li{
 
                 <ul>
                     <li>Designed and delivered enterprise automation solutions improving operational efficiency and service delivery.</li>
-                    <li>Supported technology modernization and large-scale transformation initiatives.</li>
+                    <li>Supported technology modernization and transformation initiatives.</li>
                     <li>Worked across Supply Chain, Operations, and Enterprise Service Management processes.</li>
                 </ul>
 
@@ -416,17 +424,74 @@ li{
 
             </div>
 
-            <div class="section-title">Signature Enterprise Solutions</div>
+        </div>
 
-            <ul>
-                <li>Purchase Order Tracker Automation (UiPath + IXP) evolving into an Agentic AI platform.</li>
-                <li>AI-powered ASO Audit Dashboard using AppTweak APIs and Generative AI.</li>
-                <li>Enterprise SEO Audit Automation Platform.</li>
-                <li>SEO Safety Net integrating Deepcrawl, Google Search Console, and Little Warden.</li>
-                <li>Salesforce Delivery Approval Process Automation.</li>
-                <li>HR Virtual Assistant integrating Microsoft Copilot and Workday.</li>
-                <li>Agentic Workfront Chatbot for intelligent project and workflow management.</li>
-            </ul>
+        <!-- PROGRAMS -->
+
+        <div class="section">
+
+            <div class="section-title">Selected Transformation Programs</div>
+
+            <div class="program-grid">
+
+                <div class="program">
+                    <strong>Purchase Order Tracker</strong>
+                    UiPath to Agentic AI transformation initiative
+                </div>
+
+                <div class="program">
+                    <strong>HR Digital Assistant</strong>
+                    Microsoft Copilot and Workday integration
+                </div>
+
+                <div class="program">
+                    <strong>Workfront AI Assistant</strong>
+                    Agentic AI powered workflow automation
+                </div>
+
+                <div class="program">
+                    <strong>SEO Intelligence Platform</strong>
+                    Enterprise SEO automation ecosystem
+                </div>
+
+                <div class="program">
+                    <strong>ASO Intelligence Dashboard</strong>
+                    AppTweak API and Generative AI solution
+                </div>
+
+                <div class="program">
+                    <strong>Salesforce Delivery Automation</strong>
+                    Intelligent approval workflow platform
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            <div class="footer-box">
+                <h4>Certifications</h4>
+                UiPath Certified Professional Advanced RPA Developer (UiARD)<br><br>
+                UiPath Certified Professional Agentic Automation Associate
+            </div>
+
+            <div class="footer-box">
+                <h4>Education</h4>
+                Bachelor of Information Technology<br>
+                Mahendra Engineering College<br>
+                Anna University | 2009
+            </div>
+
+            <div class="footer-box">
+                <h4>Industry Experience</h4>
+                Media & Advertising<br>
+                Finance<br>
+                Healthcare<br>
+                Supply Chain Management
+            </div>
 
         </div>
 
